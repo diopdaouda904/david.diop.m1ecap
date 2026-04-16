@@ -1,0 +1,19 @@
+#' Jeux vidéo populaires (2000-2023)
+#'
+#' Dataset contenant des informations sur 984 jeux vidéo sortis après 2000.
+#'
+#' @format Un data.frame avec 984 lignes et 10 variables :
+#' \describe{
+#'   \item{Title}{Titre du jeu}
+#'   \item{Release Date}{Date de sortie}
+#'   \item{Rating}{Note moyenne}
+#'   \item{Times Listed}{Nombre de fois listé}
+#'   \item{Number of Reviews}{Nombre de critiques}
+#'   \item{Genres}{Genres du jeu}
+#'   \item{Plays}{Nombre de parties jouées}
+#'   \item{Playing}{Joueurs actuellement actifs}
+#'   \item{Backlogs}{Jeux en backlog}
+#'   \item{Wishlist}{Jeux en wishlist}
+#' }
+#' @source \url{https://www.kaggle.com/datasets/arnabchaki/popular-video-games-1980-2023}
+"df_games"
