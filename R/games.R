@@ -8,7 +8,7 @@
 #' @examples
 #' filtrer_genre(df_games, "RPG")
 filtrer_genre <- function(df, genre) {
-  if (!is.character(genre)) stop("genre doit être un caractère")
+  if (!is.character(genre)) stop("genre doit etre un caractere")
   dplyr::filter(df, grepl(genre, Genres, ignore.case = TRUE))
 }
 
@@ -27,7 +27,7 @@ calcul_par_genre <- function(df, stat = "mean") {
                mean   = mean,
                max    = max,
                median = median,
-               stop("stat doit être 'mean', 'max' ou 'median'")
+               stop("stat doit etre 'mean', 'max' ou 'median'")
   )
   df |>
     dplyr::mutate(genre = strsplit(Genres, ",")) |>

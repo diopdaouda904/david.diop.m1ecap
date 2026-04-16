@@ -14,3 +14,10 @@ BugReports: https://github.com/diopdaouda904/david.diop.m1ecap/issues
 Depends: 
     R (>= 3.5)
 LazyData: true
+Imports: 
+    dplyr,
+    ggplot2,
+    tidyr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
